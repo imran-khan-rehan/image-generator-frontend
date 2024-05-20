@@ -35,12 +35,12 @@ const App = () => (
     </header>
     <main className="w-full  bg-black min-h-[calc(100vh-73px)]">
       <Routes>
-      <Switch>
+              <Switch>
 
-      <Route exact path="/" component={Home} />
+        <Route path="/" element={<Home />} />
         <Route path="/create-post" element={<CreatePost />} />
         <Route path='/signup' element={<Login />} />
-        <Route path="/signin" component={Signin} />
+        <Route path='/signin' element={<Signin />} />
         <Route path='/allposts' element={<AllPosts />} />
         </Switch>
       </Routes>
